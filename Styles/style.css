@@ -1,0 +1,19 @@
+.slider-buttons{
+	min-height: 20px;
+}
+
+.slider-buttons li{
+	display: inline;
+	min-height: 20px;
+	border-radius: 50%%;
+	border: 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+.slider-buttons li:hover{
+	cursor: pointer;
+}
+
+.active{
+	background-color: green;
+}
