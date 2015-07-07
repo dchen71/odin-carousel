@@ -18,29 +18,43 @@ btnid.push('#six');
 
 
 //Initialize the first image
-$('.item').append(img[0]);
+$('.item').append(img[0])
 
-//Function to allow the left click button to cycle pictures
+//Changes image to right every 5 seconds
+var autoTrans = setInterval(function(){right() }, 5000);
+
+//Click handler to allow the left click button to cycle pictures
 $('.left').click(function(){
-	$('.item').empty();
-	if(pos == 0)
-		pos = 5;
-	else
-		pos -= 1;
-	$('.item').append(img[pos]);
-	changeActive(btnid[pos]);
+	left();
 });
 
-//Function to allow the left click button to cycle pictures
+//Click handler to allow the right click button to cycle pictures
 $('.right').click(function(){
+	right();
+});
+
+//Function to change image right
+function right(){
 	$('.item').empty();
 	if(pos == 5)
 		pos = 0;
 	else
 		pos += 1;
 	$('.item').append(img[pos]);
-	changeActive(btnid[pos]);
-});
+	changeActive(btnid[pos]);	
+}
+
+
+//Function to change image left
+function left(){
+	$('.item').empty();
+	if(pos == 0)
+		pos = 5;
+	else
+		pos -= 1;
+	$('.item').append(img[pos]);
+	changeActive(btnid[pos]);	
+}
 
 //Function to change image
 function changeImg(){
