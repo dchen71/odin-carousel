@@ -1,3 +1,25 @@
+.container {
+	width: 300px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.left, .right{
+	margin-top: 25%;
+}
+
+.burger-container{
+	width:200px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
 .slider-buttons{
 	min-height: 20px;
 }
@@ -6,7 +28,6 @@
 	display: inline;
 	min-height: 20px;
 	border-radius: 50%%;
-	border: 5px;
 	padding: 5px 5px 5px 5px;
 }
 
@@ -16,4 +37,9 @@
 
 .active{
 	background-color: green;
+}
+
+img{
+	width: 100px;
+	height: 100px;
 }
