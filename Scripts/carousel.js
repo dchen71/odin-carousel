@@ -1,10 +1,20 @@
 //Image links
 var pos = 0;
-const img = [];
+const img = []; //img links
+const btnid = []; //btn id names
 
+//Init img
 for(i=1; i<=6; i++){
 	img.push("<img src='Images/b" + String(i) + ".png'>")
 }
+
+//Init btnid
+btnid.push('#one');
+btnid.push('#two');
+btnid.push('#three');
+btnid.push('#four');
+btnid.push('#five');
+btnid.push('#six');
 
 
 //Initialize the first image
@@ -18,6 +28,7 @@ $('.left').click(function(){
 	else
 		pos -= 1;
 	$('.item').append(img[pos]);
+	changeActive(btnid[pos]);
 });
 
 //Function to allow the left click button to cycle pictures
@@ -28,6 +39,7 @@ $('.right').click(function(){
 	else
 		pos += 1;
 	$('.item').append(img[pos]);
+	changeActive(btnid[pos]);
 });
 
 //Function to change image
