@@ -2,6 +2,9 @@
 	width: 300px;
 }
 
+/*
+Buttons
+*/
 .left{
 	float: left;
 }
@@ -14,20 +17,37 @@
 	margin-top: 25%;
 }
 
+
+/*
+Images
+*/
+
+img{
+	width: 100px;
+	height: 100px;
+}
+
 .burger-container{
 	width:200px;
 	margin-left: 100px;
 	margin-right: 100px;
 }
 
+
+/*
+Slider buttons
+*/
+
 .slider-buttons{
 	min-height: 20px;
+	padding-left: 20px;
 }
 
 .slider-buttons li{
 	display: inline;
 	min-height: 20px;
-	border-radius: 50%%;
+	border-radius: 50%;
+	border: 1px solid black;
 	padding: 5px 5px 5px 5px;
 }
 
@@ -39,7 +59,3 @@
 	background-color: green;
 }
 
-img{
-	width: 100px;
-	height: 100px;
-}
